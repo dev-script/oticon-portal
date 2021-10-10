@@ -1,0 +1,88 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!-- Facebook sharing information tags -->
+    <meta property="og:title" />
+    <title>
+        <%=title%> : <%=subject%>
+    </title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap" rel="stylesheet">
+</head>
+<style>
+    body {
+        font-family: 'Roboto', sans-serif;
+        font-size: 14px;
+        color: #707070;
+        text-align: center
+    }
+</style>
+
+<body leftmargin="0" marginwidth="0" topmargin="0" marginheight="0" offset="0">
+
+
+
+    <table cellpadding="0" cellspacing="0" border="0" id="backgroundTable"
+        style="height:auto !important; margin:0; padding:0; width:100% !important; background-color:#FFFFFF; color:#222222; max-width: 600px; margin: auto; border: solid 1px #dddddd">
+        <tr>
+            <td>
+                <table id="contenttable" width="600" align="center" cellpadding="0" cellspacing="0" border="0"
+                    style="background-color:#FFFFFF; text-align:center !important; margin-top:0 !important; margin-right: auto !important; margin-bottom:0 !important; margin-left: auto !important; border:none; width: 100% !important; max-width:600px !important;">
+                    <tr>
+                        <td width="100%">
+                            <table bgcolor="#FFFFFF" border="0" cellspacing="0" cellpadding="0" width="100%">
+                                <tr>
+                                    <td width="100%" bgcolor="#ffffff" style="text-align:center; margin-top: 10px;
+    display: inline-block;
+    border-bottom: solid 1px #dddddd;
+    padding-bottom: 10px;"><a href="#"><img src="cid:logo" style="max-width: 330px;"></a>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table bgcolor="#FFFFFF" border="0" cellspacing="0" cellpadding="25" width="100%">
+                                <tr>
+                                    <td width="100%" bgcolor="#ffffff" style="text-align:left;">
+                                        <p style="color: #151414; line-height: 23px;">
+                                            Hi <%=first_name%>,<br> Please Click on the link to verify your email.<br><a href="<%=link%>">Click here to verify</a>
+                                        </p>
+                                                <p
+                                                    style="margin: 10px 0 ; width: 100%; float: left; text-align: left;color: #151414;">
+                                                    If you did not make this request, please ignore this email.</p>
+                                                <div
+                                                    style="margin: 10px 0 ; width: 100%; float: left; margin-bottom: 0;color: #151414;">
+                                                    Regards,</div>
+                                                <div
+                                                    style="margin: 10px 0 ; width: 100%; float: left; margin-top: 0;color: #151414;">
+                                                    Oticon</div>
+                                    </td>
+                                </tr>
+                            </table>
+
+                        </td>
+                    </tr>
+                </table>
+                <table bgcolor="#FFFFFF" border="0" cellspacing="0" style="text-align:center !important; width: 100%">
+                    <tr>
+                        <td width="100%" bgcolor="#ffffff" style="text-align:left; background: #d2d2d2;">
+                            <div style="width: 100%; float: left; text-align: center; background: #D2D2D2; color: #000000; font-size: 12px; box-sizing: border-box; font-weight: normal; border-top: 15px solid #d2d2d2;
+                                    border-bottom: 15px solid #d2d2d2;
+                                    border-left: 15px solid #d2d2d2;
+                                    border-right: 15px solid #d2d2d2;
+                                    color: #151414;">
+                                © Oticon All Right Reserved <%=new Date().getFullYear()%>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+
+
+
+</body>
+
+</html>

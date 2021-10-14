@@ -15,7 +15,7 @@ const { constants } = require('./config');
 const { connectToMongoDb } = require('./db');
 const { logger } = require("./utilities/log-service.js");
 // const docs = require('./docs');
-
+const cors = require('cors')
 const app = express();
 const port = constants.PORT || 8443;
 
@@ -25,6 +25,7 @@ app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use('/static', express.static('static'));
+app.use(cors());
 app.use(session({
     secret: 'some-secret',
     resave: false,

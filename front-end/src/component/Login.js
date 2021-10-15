@@ -77,7 +77,9 @@ function Login(props) {
                                             </Label>
                                         </FormGroup>
                                         <Button className="oticon-btn d-block w-100" onClick={handleSubmit}>Login</Button>
-                                        <span className="formbottom">Not Yet Registered?<a href="/signup">Create Account</a> <a href="#0" className="float-right">Forgot Password?</a></span>
+                                        <span className="formbottom">Not Yet Registered?<a href="javascript:void(0)" onClick={()=>{
+                                            history.push('/signup')
+                                        }}>Create Account</a> <a href="#0" className="float-right">Forgot Password?</a></span>
                                     </Form>
                                     </div>
                                     </div>
